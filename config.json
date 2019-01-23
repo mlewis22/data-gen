@@ -1,0 +1,61 @@
+{
+    "log_level": "INFO",
+    "database":[
+        {
+            "type": "enterprise",
+            "properties":{
+                "remove_existing": false,
+                "folder_path": "local",
+                "name": "database_connection.sde",
+                "database_platform": "SQL_SERVER",
+                "instance": "InstanceName\\SQLEXPRESS, port",
+                "account_authentication": "DATABASE_AUTH",
+                "username": "username",
+                "password": "password",
+                "save_user_pass": "SAVE_USERNAME",
+                "database": "mydb",
+                "schema": "#",
+                "version_type": "TRANSACTIONAL",
+                "version": "#",
+                "date": "#"
+                }
+        },
+        {
+            "type": "filegdb",
+            "properties": {
+                "folder_path": "local",
+                "name": "test.gdb"
+            }
+        },
+        {
+            "type": "shapefile",
+            "properties": {
+                "folder_path": "local"
+            }
+        }
+    ],
+    "featureclass": [{
+        "shema_index": 0,
+        "out_name": "Example",
+        "geometry_type": "POINT",
+        "template": "#",
+        "has_m": "DISABLED",
+        "has_z":"DISABLED",
+        "spatial_reference": 4326,
+        "config_keyword": "#",
+        "spatial_grid_1": "#",
+        "spatial_grid_2": "#",
+        "spatial_grid_3": "#",
+        "out_alias": "#"
+    }],
+    "fields": [
+        [
+            ["TEXTFIELD", "TEXT", "Text Field", 100, null],
+            ["DATEFIELD", "DATE", "Date FIeld", null, null],
+            ["DOUBLEFIELD", "DOUBLE", "Double Field", null, null],
+            ["SHORTFIELD", "SHORT", "Short Field", null, null]
+        ]
+    ]
+
+
+}
