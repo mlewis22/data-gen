@@ -4,7 +4,7 @@
         {
             "type": "enterprise",
             "properties":{
-                "remove_existing": false,
+                "remove_existing": true,
                 "folder_path": "local",
                 "name": "database_connection.sde",
                 "database_platform": "SQL_SERVER",
